@@ -9,7 +9,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 # Download codemaker cli
-RUN wget https://github.com/codemakerai/codemaker-cli/releases/download/v0.0.12/linux-amd64.zip -P / \
+RUN wget https://github.com/codemakerai/codemaker-cli/releases/download/v1.0.0/linux-amd64.zip -P / \
   && unzip /linux-amd64.zip
 
 # Add codemaker cli tp PATH
