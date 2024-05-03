@@ -9,11 +9,11 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 # Download codemaker cli
-RUN wget https://github.com/codemakerai/codemaker-cli/releases/download/v1.2.0/linux-amd64.zip -P / \
-  && unzip /linux-amd64.zip
+RUN wget https://github.com/codemakerai/codemaker-cli/releases/download/v1.2.0/codemaker-cli_Linux_x86_64.tar.gz -P / \
+  && tar -xvzf /codemaker-cli_Linux_x86_64.tar.gz
 
 # Add codemaker cli tp PATH
-ENV PATH="$PATH:/linux-amd64/bin"
+ENV PATH="$PATH:/codemaker-cli_Linux_x86_64/bin"
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
