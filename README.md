@@ -31,7 +31,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Code generation
-        uses: codemakerai/codemaker-action@v1.1.0
+        uses: codemakerai/codemaker-action@v1.2.0
         with:
           api-key: ${{ secrets.CODEMAKER_API_KEY }}
           mode: code
