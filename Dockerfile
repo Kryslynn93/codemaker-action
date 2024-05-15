@@ -9,7 +9,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 # Download codemaker cli
-RUN wget https://github.com/codemakerai/codemaker-cli/releases/download/v1.2.0/codemaker-cli_Linux_x86_64.tar.gz -P / \
+RUN wget https://github.com/codemakerai/codemaker-cli/releases/download/v1.3.0/codemaker-cli_Linux_x86_64.tar.gz -P / \
   && tar -xvzf /codemaker-cli_Linux_x86_64.tar.gz
 
 # Rename the binary
